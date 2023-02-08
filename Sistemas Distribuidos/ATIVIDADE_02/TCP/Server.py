@@ -18,6 +18,7 @@ def recebe(cliente_socket, cliente_endereco):
         cliente_socket.send('Arquivo nao encontrado'.encode(), cliente_endereco)
         cliente_socket.close()
 
+
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((host, porta))
 server.listen()
